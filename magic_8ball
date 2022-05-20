@@ -22,6 +22,9 @@ def getAnswer(answerNumber):
         return 'Very doubtful'
 
 # gets random no 1-9, prints return from function above
+# these last three lines can be written as one line of code
+# but as i didnt think of it myself, leaving as it is
 r = random.randint(1, 9)
 fortune = getAnswer(r)
 print(fortune)
+
