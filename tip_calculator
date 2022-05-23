@@ -18,5 +18,9 @@ sub_total = tip_percent + float_bill
 
 final_amount = sub_total / int_people
 
-# prints final amount to 2 decimal places
-print(round(final_amount, 2))
+bill_per_person = (round(final_amount, 2))
+
+# Adds 2 decimal places even if total ends in 1 decimal place
+bill_per_person = "{:.2f}".format(final_amount)
+
+print(f"Each person needs to pay {bill_per_person}")
